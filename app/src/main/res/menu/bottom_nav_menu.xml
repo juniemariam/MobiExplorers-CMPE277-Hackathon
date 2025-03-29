@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_api"
+        android:title="API" />
+
+    <item
+        android:id="@+id/nav_llm"
+        android:icon="@drawable/ic_llm"
+        android:title="LLM" />
+
+    <item
+        android:id="@+id/nav_car"
+        android:icon="@drawable/ic_car"
+        android:title="Car" />
+
+</menu>
