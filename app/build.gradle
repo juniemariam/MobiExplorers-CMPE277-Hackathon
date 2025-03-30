@@ -55,6 +55,11 @@ dependencies {
     androidTestImplementation libs.androidx.ui.test.junit4
     debugImplementation libs.androidx.ui.tooling
     debugImplementation libs.androidx.ui.test.manifest
+    implementation libs.google.generativeai
+    implementation libs.guava
+    implementation libs.mpandroidchart
+    implementation libs.itextpdf
+    implementation libs.json
     implementation libs.tensorflow.lite
     implementation libs.mpandroidchart
     implementation libs.volley
