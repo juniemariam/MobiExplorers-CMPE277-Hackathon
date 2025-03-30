@@ -16,7 +16,7 @@ The automobile company planned to obtain state approval and needed to capture al
 [Watch the Demo](https://drive.google.com/file/d/1tdcIyfrY5Rh1eMFR0qM3XE-lLv1DrlCv/view?usp=drive_link)
 
 ## Project Document
-[View the presentation as a PDF](Market-Researcher-and-Car-Maintenance-Copilots-Hackathon.pdf)
+[View the presentation as a PDF](https://github.com/juniemariam/MobiExplorers-CMPE277-Hackathon/blob/main/Market%20Researcher%20and%20Car%20Maintenance%20Copilots%20Hackathon.pdf)
 
 
 ## Sound Classifier ipynb
