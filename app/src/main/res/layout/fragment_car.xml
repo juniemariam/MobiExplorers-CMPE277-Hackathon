@@ -1,6 +1,66 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="32dp"
     android:gravity="center"
-    android:text="This is Car Fragment"
-    android:textSize="20sp"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Select Audio File:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Styled input box for audio file -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/input_box_bg"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/audio_file_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pick Audio File"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/audio_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_audio_wave"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- Call ML button -->
+    <Button
+        android:id="@+id/call_ml_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/call_ml_button_bg"
+        android:text="Call ML"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Output Text -->
+    <TextView
+        android:id="@+id/result_text"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
