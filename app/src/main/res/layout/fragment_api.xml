@@ -1,6 +1,60 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:text="This is api Fragment"
-    android:textSize="20sp"/>
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
+
+    <!-- Top Row: GDP and CO2 buttons with spacing -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_gdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GDP" />
+
+        <Button
+            android:id="@+id/btn_co2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO2"
+            android:layout_marginStart="12dp" /> <!-- spacing added -->
+    </LinearLayout>
+
+    <!-- Agri. Land button below -->
+    <Button
+        android:id="@+id/btn_agri_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agri. Land"
+        android:layout_marginTop="12dp" />
+
+    <!-- Image Placeholder -->
+    <ImageView
+        android:id="@+id/chart_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="16dp" />
+
+    <!-- Line Chart -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bottom Placeholder Row (optional) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

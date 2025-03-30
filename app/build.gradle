@@ -61,4 +61,8 @@ dependencies {
     implementation libs.mpandroidchart
     implementation libs.itextpdf
     implementation libs.json
+    implementation libs.tensorflow.lite
+    implementation libs.mpandroidchart
+    implementation libs.volley
+
 }

@@ -12,9 +12,12 @@ appcompat = "1.7.0"
 material = "1.12.0"
 generativeai = "0.2.0"
 guava = "31.1-android"
-mpandroidchart = "v3.1.0"
 itextpdf = "7.2.3"
 json = "20210307"
+mpandroidchart = "v3.1.0"
+tarsosdsp = "2.4"
+tensorflowLite = "2.13.0"
+volley = "1.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,9 +38,12 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 google-generativeai = { module = "com.google.ai.client.generativeai:generativeai", version.ref = "generativeai" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
-mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
 itextpdf = { module = "com.itextpdf:itext7-core", version.ref = "itextpdf" }
 json = { module = "org.json:json", version.ref = "json" }
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
+tarsosdsp = { module = "com.github.JorenSix:TarsosDSP", version.ref = "tarsosdsp" }
+tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

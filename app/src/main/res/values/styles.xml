@@ -1,8 +1,19 @@
 <resources>
-    <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here -->
+    <!-- Main app theme -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryDark">@color/purple_700</item>
         <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+    <!-- Bottom Navigation customization -->
+    <style name="BottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">36dp</item> <!-- You can go up to 48dp max safely -->
+        <item name="itemTextAppearanceInactive">@style/BottomNavText</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavText</item>
+    </style>
+
+    <style name="BottomNavText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">0sp</item> <!-- hides label text -->
     </style>
 </resources>
